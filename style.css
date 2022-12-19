@@ -12,10 +12,12 @@ body {
     justify-content: space-between;
     padding: 8px 0px;
     flex-grow: 0;
+    margin: 0 10%;
 }
 
 .logo {
     font-size: 24px;
+    font-weight: 700;
     color: #f9faf8;
 }
 
@@ -37,7 +39,8 @@ a {
 
 .hero {
     color: #f9faf8;
-
+    margin: 5% 10%;
+    display: flex;
 }
 
 .hero-container {
@@ -49,6 +52,21 @@ a {
 .hero h1 {
     font-size: 48px;
     font-weight: bolder;
+}
+
+.hero-image {
+    background-color: #6f7074;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: stretch;
+    padding: 48px;
+    flex-basis: 1 1 0;
+}
+
+.hero-content {
+    padding-right: 48px;
+    flex-basis: 1 1 0;
 }
 
 .hero p {
@@ -64,27 +82,12 @@ a {
     color: #f9faf8;
 }
 
-.hero-image {
-    background-color: #6f7074;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 48px;
-    flex: 0 1 1;
-}
-
-.hero-content {
-    padding-right: 48px;
-    flex: 0 1 1;
-}
-
 .content {
     background-color: white;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex-grow: 1;
 }
 
 .card-section {
@@ -93,43 +96,70 @@ a {
     justify-content: center;
     align-items: center;
     text-align: center;
+    margin: 2% 10% 5% 10%;
 }
 
 .content img {
-    height: 100px;
-    width: 100px;
+    height: 150px;
+    width: 150px;
     border-style: solid;
     border-color: #3882f6;
     border-radius: 10px;
 }
 
+.content p {
+    margin-top: 8px;
+}
+
 .quote-section {
     margin: 0;
+    padding: 5% 0;
     background-color: #e5e7eb;
     font-size: 36px;
     font-style: italic;
-    font-weight: light;
+    font-weight: 200;
     color:#1f2937;
 }
 
+.quote-section blockquote{
+    margin: 0 10%;
+}
+
+.quote-section figcaption{
+    margin: 0 10%;
+    text-align: end;
+    font-size: 24px;
+    font-weight: 800;
+}
+
+.quote-section cite {
+    font-style: normal;
+}
+
 .action-section {
+    margin: 5% 10%;
     background-color: #3882f6;
     color:#e5e7eb;
     border-radius: 10px;
-    padding: 48px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     gap: 16px;
+    padding: 32px;
     align-self: stretch;
 }
 
 .action-section button{
     background-color: transparent;
-    border: 3px solid #f9faf8;
-    border-radius: 2px;
+    border: 2px solid #f9faf8;
+    border-radius: 4px;
     color: #f9faf8;
-    padding: 0 16px;
+    padding: 4px 16px;
+    margin: auto 0;
     font-weight: 900;
+}
+
+.action-section h2, .action-section p {
+    margin: 0;
 }
 
 .footer {
