@@ -10,7 +10,7 @@ body {
 .header {
     display: flex;
     justify-content: space-between;
-    padding: 8px 16px;
+    padding: 8px 0px;
 }
 
 .logo {
@@ -35,6 +35,46 @@ a {
 }
 
 .hero {
+    color: #f9faf8;
+
+}
+
+.hero-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero h1 {
+    font-size: 48px;
+    font-weight: bolder;
+}
+
+.hero p {
+    color:#e5e7eb;
+    font-size: 18px;    
+}
+
+.hero button {
+    background-color: #3882f6;
+    border-style: none;
+    padding: 4px 16px;
+    border-radius: 10%;
+    color: #f9faf8;
+}
+
+.hero-image {
+    background-color: #6f7074;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 48px;
+    flex: 0 1 1;
+}
+
+.hero-content {
+    padding-right: 48px;
+    flex: 0 1 1;
 }
 
 .content {
