@@ -11,6 +11,7 @@ body {
     display: flex;
     justify-content: space-between;
     padding: 8px 0px;
+    flex-grow: 0;
 }
 
 .logo {
@@ -59,7 +60,7 @@ a {
     background-color: #3882f6;
     border-style: none;
     padding: 4px 16px;
-    border-radius: 10%;
+    border-radius: 4px;
     color: #f9faf8;
 }
 
@@ -78,7 +79,65 @@ a {
 }
 
 .content {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.card-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.content img {
+    height: 100px;
+    width: 100px;
+    border-style: solid;
+    border-color: #3882f6;
+    border-radius: 10px;
+}
+
+.quote-section {
+    margin: 0;
+    background-color: #e5e7eb;
+    font-size: 36px;
+    font-style: italic;
+    font-weight: light;
+    color:#1f2937;
+}
+
+.action-section {
+    background-color: #3882f6;
+    color:#e5e7eb;
+    border-radius: 10px;
+    padding: 48px;
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    align-self: stretch;
+}
+
+.action-section button{
+    background-color: transparent;
+    border: 3px solid #f9faf8;
+    border-radius: 2px;
+    color: #f9faf8;
+    padding: 0 16px;
+    font-weight: 900;
 }
 
 .footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 48px;
+    font-size: 18px;
+    color:#e5e7eb;
+    flex-grow: 0;
 }
