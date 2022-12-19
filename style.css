@@ -2,9 +2,36 @@ body {
     font-family: "roboto", Arial, Helvetica, sans-serif;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    margin: 0;
+    background-color: #1f2937;
 }
 
 .header {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 16px;
+}
+
+.logo {
+    font-size: 24px;
+    color: #f9faf8;
+}
+
+ul {
+    display: flex;
+    margin: 0;
+    list-style: none;
+}
+
+li {
+    font-size: 18px;
+    padding: 8px;
+}
+
+a {
+    color:#e5e7eb;
+    text-decoration: none;
 }
 
 .hero {
